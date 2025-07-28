@@ -22,13 +22,13 @@ const certificateDatabase = {
     college: "Magdalen College",
     date: "5 December 2021",
     classification: "With Honors"
-   };
-   "OXFD-2021-65881": {
+  },
+  "OXFD-2021-65881": {
     name: "Kaleem Ullah",
     number: "OXFD-2021-65881",
     degree: "HSE Health, Safety, and Environment",
     college: "Magdalen College",
-    date: "23 june 2025",
+    date: "23 June 2025",
     classification: "With Honors"
-   {
- };
+  }
+};
