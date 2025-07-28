@@ -24,11 +24,11 @@ const certificateDatabase = {
     classification: "With Honors"
    };
    "OXFD-2021-12345": {
-    name: "Sophia Chaudhry",
-    number: "OXFD-2021-12345",
-    degree: "Doctor of Philosophy in Biological Sciences",
+    name: "Kaleem Ullah",
+    number: "OXFD-2021-65881",
+    degree: "HSE Health, Safety, and Environment",
     college: "Magdalen College",
-    date: "5 December 2021",
+    date: "23 june 2025",
     classification: "With Honors"
    {
  };
