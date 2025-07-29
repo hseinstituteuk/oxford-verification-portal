@@ -1,323 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oxford University | Certificate Verification</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
-        
-        body {
-            font-family: 'EB Garamond', serif;
-            background-color: #f9f9f9;
-        }
-        
-        .oxford-blue {
-            background-color: #002147;
-        }
-        
-        .oxford-gold {
-            color: #b88800;
-        }
-        
-        .certificate-border {
-            border: 20px solid #002147;
-            border-image: linear-gradient(45deg, #002147, #b88800) 1;
-        }
-        
-        .certificate-seal {
-            background: radial-gradient(circle, transparent 20%, white 20%, white 80%, transparent 80%, transparent), 
-                        radial-gradient(circle, transparent 20%, white 20%, white 80%, transparent 80%, transparent) 25px 25px, 
-                        linear-gradient(#b88800 2px, transparent 2px) 0 -1px, 
-                        linear-gradient(90deg, #b88800 2px, transparent 2px) -1px 0;
-            background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
-        }
-        
-        .verification-badge {
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(0, 33, 71, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 10px rgba(0, 33, 71, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(0, 33, 71, 0);
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oxford University | Certificate Verification</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+    body {
+      font-family: 'EB Garamond', serif;
+      background-color: #f9f9f9;
+    }
+    .oxford-blue { background-color: #002147; }
+    .oxford-gold { color: #b88800; }
+    .certificate-border {
+      border: 20px solid #002147;
+      border-image: linear-gradient(45deg, #002147, #b88800) 1;
+    }
+    .certificate-seal {
+      background: radial-gradient(circle, transparent 20%, white 20%, white 80%, transparent 80%, transparent),
+                  radial-gradient(circle, transparent 20%, white 20%, white 80%, transparent 80%, transparent) 25px 25px,
+                  linear-gradient(#b88800 2px, transparent 2px) 0 -1px,
+                  linear-gradient(90deg, #b88800 2px, transparent 2px) -1px 0;
+      background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+    }
+    .verification-badge {
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0, 33, 71, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(0, 33, 71, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(0, 33, 71, 0); }
+    }
+  </style>
 </head>
 <body>
-    <!-- Header with Logo and Navigation -->
-    <header class="oxford-blue shadow-lg">
-        <div class="container mx-auto px-4 py-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center mb-4 md:mb-0">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c95026c2-ed7d-4ed2-ad91-9511fb1e496c.png" alt="Oxford University crest featuring an open book with 'Dominus illuminatio mea' inscription surrounded by ornamental design in gold on dark blue background" class="h-16 w-16 mr-4">
-                    <h1 class="text-2xl font-bold text-white">University of Oxford</h1>
-                </div>
-                <nav class="flex space-x-6">
-                    <a href="#" class="text-white hover:text-gray-300 font-medium">Home</a>
-                    <a href="#" class="text-white hover:text-gray-300 font-medium">About</a>
-                    <a href="#" class="text-white hover:text-gray-300 font-medium">Contact</a>
-                </nav>
-            </div>
+  <!-- Header -->
+  <header class="oxford-blue shadow-lg">
+    <div class="container mx-auto px-4 py-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center mb-4 md:mb-0">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c95026c2-ed7d-4ed2-ad91-9511fb1e496c.png" class="h-16 w-16 mr-4" alt="Oxford Logo" />
+          <h1 class="text-2xl font-bold text-white">University of Oxford</h1>
         </div>
-    </header>
+        <nav class="flex space-x-6">
+          <a href="#" class="text-white hover:text-gray-300 font-medium">Home</a>
+          <a href="#" class="text-white hover:text-gray-300 font-medium">About</a>
+          <a href="#" class="text-white hover:text-gray-300 font-medium">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-12">
-        <!-- Hero Section with Search -->
-        <section class="mb-16">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Certificate Verification Portal</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    Verify the authenticity of Oxford University certificates, degrees and awards.
-                    Please enter the certificate number found at the bottom of your document.
-                </p>
-            </div>
-            
-            <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-8">
-                <div class="mb-6">
-                    <label for="certificate-number" class="block text-gray-700 font-medium mb-2">Certificate Number</label>
-                    <div class="relative">
-                        <input type="text" id="certificate-number" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="e.g. OXFD-2024-XXXXX">
-                        <button id="search-btn" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-                            Verify
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="flex items-center text-sm text-gray-500">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    Need help finding your certificate number?
-                </div>
-            </div>
-        </section>
+  <!-- Main -->
+  <main class="container mx-auto px-4 py-12">
+    <section class="mb-16 text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Certificate Verification Portal</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Verify the authenticity of Oxford University certificates, degrees and awards. Please enter the certificate number found at the bottom of your document.</p>
 
-        <!-- Verification Result (Hidden by default) -->
-        <section id="verification-result" class="hidden max-w-4xl mx-auto mb-16">
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div class="bg-green-100 p-4 flex items-center">
-                    <svg class="w-6 h-6 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span class="font-medium text-green-800">Verified Certificate</span>
-                </div>
-                
-                <div class="p-6">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div class="md:col-span-2">
-                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Certificate Details</h3>
-                            <div class="space-y-4">
-                                <div class="flex justify-between border-b pb-2">
-                                    <span class="text-gray-600">Name:</span>
-                                    <span class="font-medium" id="cert-name">Eleanor Rutherford</span>
-                                </div>
-                                <div class="flex justify-between border-b pb-2">
-                                    <span class="text-gray-600">Certificate Number:</span>
-                                    <span class="font-medium" id="cert-number">OXFD-2023-78942</span>
-                                </div>
-                                <div class="flex justify-between border-b pb-2">
-                                    <span class="text-gray-600">Degree:</span>
-                                    <span class="font-medium" id="cert-degree">Master of Science in Computer Science</span>
-                                </div>
-                                <div class="flex justify-between border-b pb-2">
-                                    <span class="text-gray-600">College:</span>
-                                    <span class="font-medium" id="cert-college">Balliol College</span>
-                                </div>
-                                <div class="flex justify-between border-b pb-2">
-                                    <span class="text-gray-600">Date Awarded:</span>
-                                    <span class="font-medium" id="cert-date">15 July 2023</span>
-                                </div>
-                                <div class="flex justify-between border-b pb-2">
-                                    <span class="text-gray-600">Classification:</span>
-                                    <span class="font-medium" id="cert-class">Distinction</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="flex flex-col items-center justify-center">
-                            <div class="verification-badge bg-blue-100 text-blue-800 rounded-full p-6 mb-4">
-                                <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                                </svg>
-                            </div>
-                            <p class="text-sm text-gray-500 text-center">This certificate has been successfully verified with Oxford University's official records.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-                      </div>
-                        <div class="flex items-center">
-                            <div class="certificate-seal rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                                <svg class="w-10 h-10 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                                </svg>
-                           
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Additional Information -->
-        <section class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">About Certificate Verification</h2>
-            <div class="bg-white rounded-lg shadow-md p-8">
-                <div class="prose max-w-none">
-                    <p class="mb-4">The University of Oxford maintains a secure database of all awarded certificates and degrees. This verification system allows employers, academic institutions, and other authorized parties to confirm the authenticity of Oxford University qualifications.</p>
-                    
-                    <h3 class="text-xl font-bold text-gray-800 mt-6 mb-4">Verification Process</h3>
-                    <ol class="list-decimal pl-5 space-y-2 mb-4">
-                        <li>Enter the unique certificate number found on the document</li>
-                        <li>Our system will search official university records</li>
-                        <li>Verified results will display the certificate holder's details</li>
-                        <li>For additional verification, contact the Examinations and Assessments office</li>
-                    </ol>
-                    
-                    <h3 class="text-xl font-bold text-gray-800 mt-6 mb-4">Security Features</h3>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li>Holographic university seal</li>
-                        <li>Microprinted text</li>
-                        <li>Unique certificate number</li>
-                        <li>UV-reactive elements</li>
-                        <li>Security watermark paper</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="oxford-blue text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-lg font-bold mb-4">University of Oxford</h3>
-                    <p>Established 1096</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Contact</h3>
-                    <p>Examinations and Assessments</p>
-                    <p>University Offices</p>
-                    <p>Wellington Square</p>
-                    <p>Oxford OX1 2JD</p>
-                    <p>United Kingdom</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:underline">Degree Verification</a></li>
-                        <li><a href="#" class="hover:underline">Alumni Services</a></li>
-                        <li><a href="#" class="hover:underline">Transcript Requests</a></li>
-                        <li><a href="#" class="hover:underline">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Legal</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:underline">Terms of Use</a></li>
-                        <li><a href="#" class="hover:underline">Accessibility</a></li>
-                        <li><a href="#" class="hover:underline">Cookie Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-blue-800 mt-8 pt-8 text-center">
-                <p>© 2023 University of Oxford. All rights reserved.</p>
-            </div>
+      <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-8">
+        <div class="mb-6">
+          <label for="certificate-number" class="block text-gray-700 font-medium mb-2">Certificate Number</label>
+          <div class="relative">
+            <input type="text" id="certificate-number" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="e.g. OXFD-2024-XXXXX">
+            <button id="search-btn" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Verify</button>
+          </div>
         </div>
-    </footer>
+        <div class="flex items-center text-sm text-gray-500">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          Need help finding your certificate number?
+        </div>
+      </div>
+    </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const searchBtn = document.getElementById('search-btn');
-            const certificateInput = document.getElementById('certificate-number');
-            const verificationResult = document.getElementById('verification-result');
-            
-            // Example certificate data
-            const exampleCertificates = {
-                'OXFD-2023-78942': {
-                    name: 'Eleanor Rutherford',
-                    number: 'OXFD-2023-78942',
-                    degree: 'Master of Science in Computer Science',
-                    college: 'Balliol College',
-                    date: '15 July 2023',
-                    class: 'Distinction'
-                },
-                'OXFD-2022-54321': {
-                    name: 'James Winchester',
-                    number: 'OXFD-2022-54321',
-                    degree: 'Bachelor of Arts in Philosophy, Politics and Economics',
-                    college: 'Christ Church',
-                    date: '20 June 2022',
-                    class: 'First Class Honours'
-                },
-                'OXFD-2021-12345': {
-                    name: 'Sophia Chaudhry',
-                    number: 'OXFD-2021-12345',
-                    degree: 'Doctor of Philosophy in Biological Sciences',
-                    college: 'Magdalen College',
-                    date: '5 December 2021',
-                    class: 'With Honors'
-               };
-               'OX948RD': {
-                    name: 'Thi Quynh Anh Nguyen',
-                    number: 'OX948RD',
-                    degree: 'Higher Education in Teaching',
-                    college: 'Christ Church College',
-                    date: '29th July 2025',
-                    class: 'First Class Honours'
-               {
-             };
-            
-            searchBtn.addEventListener('click', function() {
-                const certNumber = certificateInput.value.trim();
-                
-                if (!certNumber) {
-                    alert('Please enter a certificate number');
-                    return;
-                }
-                
-                // Check if the certificate exists in our example data
-                if (exampleCertificates[certNumber]) {
-                    const cert = exampleCertificates[certNumber];
-                    
-                    // Populate the verification result
-                    document.getElementById('cert-name').textContent = cert.name;
-                    document.getElementById('cert-number').textContent = cert.number;
-                    document.getElementById('cert-degree').textContent = cert.degree;
-                    document.getElementById('cert-college').textContent = cert.college;
-                    document.getElementById('cert-date').textContent = cert.date;
-                    document.getElementById('cert-class').textContent = cert.class;
-                    
-                    // Show the result
-                    verificationResult.classList.remove('hidden');
-                    
-                    // Scroll to the result
-                    verificationResult.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                    alert('Certificate not found. Please verify the number and try again.');
-                }
-            });
-            
-            // Allow pressing Enter to search
-            certificateInput.addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    searchBtn.click();
-                }
-            });
-        });
-    </script>
+    <!-- Verification Result -->
+    <section id="verification-result" class="hidden max-w-4xl mx-auto mb-16">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="bg-green-100 p-4 flex items-center">
+          <svg class="w-6 h-6 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <span class="font-medium text-green-800">Verified Certificate</span>
+        </div>
+        <div class="p-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-2 space-y-4">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">Certificate Details</h3>
+              <div class="flex justify-between border-b pb-2"><span class="text-gray-600">Name:</span><span class="font-medium" id="cert-name"></span></div>
+              <div class="flex justify-between border-b pb-2"><span class="text-gray-600">Certificate Number:</span><span class="font-medium" id="cert-number"></span></div>
+              <div class="flex justify-between border-b pb-2"><span class="text-gray-600">Degree:</span><span class="font-medium" id="cert-degree"></span></div>
+              <div class="flex justify-between border-b pb-2"><span class="text-gray-600">College:</span><span class="font-medium" id="cert-college"></span></div>
+              <div class="flex justify-between border-b pb-2"><span class="text-gray-600">Date Awarded:</span><span class="font-medium" id="cert-date"></span></div>
+              <div class="flex justify-between border-b pb-2"><span class="text-gray-600">Classification:</span><span class="font-medium" id="cert-class"></span></div>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <div class="verification-badge bg-blue-100 text-blue-800 rounded-full p-6 mb-4">
+                <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              </div>
+              <p class="text-sm text-gray-500 text-center">This certificate has been successfully verified with Oxford University's official records.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="oxford-blue text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-lg font-bold mb-4">University of Oxford</h3>
+          <p>Established 1096</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Contact</h3>
+          <p>Examinations and Assessments</p>
+          <p>University Offices</p>
+          <p>Wellington Square</p>
+          <p>Oxford OX1 2JD</p>
+          <p>United Kingdom</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Degree Verification</a></li>
+            <li><a href="#" class="hover:underline">Alumni Services</a></li>
+            <li><a href="#" class="hover:underline">Transcript Requests</a></li>
+            <li><a href="#" class="hover:underline">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Legal</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Terms of Use</a></li>
+            <li><a href="#" class="hover:underline">Accessibility</a></li>
+            <li><a href="#" class="hover:underline">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+        <p>© 2023 University of Oxford. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Verification Script with URL Param Support -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const searchBtn = document.getElementById('search-btn');
+      const certificateInput = document.getElementById('certificate-number');
+      const verificationResult = document.getElementById('verification-result');
+
+      const exampleCertificates = {
+        'OXFD-2023-78942': {
+          name: 'Eleanor Rutherford',
+          number: 'OXFD-2023-78942',
+          degree: 'Master of Science in Computer Science',
+          college: 'Balliol College',
+          date: '15 July 2023',
+          class: 'Distinction'
+        },
+        'OXFD-2022-54321': {
+          name: 'James Winchester',
+          number: 'OXFD-2022-54321',
+          degree: 'Bachelor of Arts in Philosophy, Politics and Economics',
+          college: 'Christ Church',
+          date: '20 June 2022',
+          class: 'First Class Honours'
+        },
+        'OX948RD': {
+          name: 'Thi Quynh Anh Nguyen',
+          number: 'OX948RD',
+          degree: 'Higher Education in Teaching',
+          college: 'Christ Church College Oxford',
+          date: '29th July 2025',
+          class: 'First Class Honors'
+        }
+      };
+
+      function verifyCertificate(certNumber) {
+        if (!certNumber) {
+          alert('Please enter a certificate number');
+          return;
+        }
+        if (exampleCertificates[certNumber]) {
+          const cert = exampleCertificates[certNumber];
+          document.getElementById('cert-name').textContent = cert.name;
+          document.getElementById('cert-number').textContent = cert.number;
+          document.getElementById('cert-degree').textContent = cert.degree;
+          document.getElementById('cert-college').textContent = cert.college;
+          document.getElementById('cert-date').textContent = cert.date;
+          document.getElementById('cert-class').textContent = cert.class;
+          verificationResult.classList.remove('hidden');
+          verificationResult.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          alert('Certificate not found. Please verify the number and try again.');
+        }
+      }
+
+      searchBtn.addEventListener('click', function () {
+        const certNumber = certificateInput.value.trim();
+        if (certNumber) {
+          const newURL = window.location.origin + window.location.pathname + '?cert=' + encodeURIComponent(certNumber);
+          window.history.replaceState({}, '', newURL);
+          verifyCertificate(certNumber);
+        }
+      });
+
+      certificateInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') searchBtn.click();
+      });
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const certFromURL = urlParams.get('cert');
+      if (certFromURL) {
+        certificateInput.value = certFromURL;
+        verifyCertificate(certFromURL);
+      }
+    });
+  </script>
 </body>
 </html>
-
